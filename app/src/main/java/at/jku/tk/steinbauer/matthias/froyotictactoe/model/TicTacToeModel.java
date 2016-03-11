@@ -82,7 +82,7 @@ public class TicTacToeModel {
         }
         for(int col=0;col<GAME_SIZE;col++) {
             if(this.field[0][col] != TTTMark.None && this.field[0][col] == this.field[1][col] && this.field[1][col] == this.field[2][col]) {
-                return this.field[col][0];
+                return this.field[0][col];
             }
         }
         if(this.field[1][1] != TTTMark.None) {
